@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    //Сложение
+    function add(a , b) {
+        return a + b;
+    }
+
+    //Вычитание
+    function sub(a , b) {
+        return a - b;
+    }
+
+    //Деление
+    function div(a , b) {
+        return a / b;
+    }
+
+    //Умножение
+    function mult(a , b) {
+        return a * b;
+    }
+
+    function mathOperation(operation, arg1, arg2) {
+        switch (operation) {
+            case "sum":
+                return arg1 + arg2;
+                break;
+
+            case "sub":
+                return arg1 - arg2;
+                break;
+
+            case "div":
+                return arg1 / arg2;
+                break;
+
+            case "mult":
+                return arg1 * arg2;
+                break;
+        }
+    }
+    console.log(mathOperation("sum", 56, 21));
+    console.log(mathOperation("sub", 56, 21));
+    console.log(mathOperation("div", 56, 21));
+    console.log(mathOperation("mult",56, 21));
+
+</script>
+</body>
+</html>
