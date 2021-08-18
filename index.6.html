@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let a = Number(prompt("Введите первое число"));
+        let b = Number(prompt("Введите второе число"));
+        if (a >= 0 && b >= 0) {
+            let sum = a + b;
+            alert("Сумма чисел равна: "  + sum);
+        } else if (a < 0 && b < 0) {
+            let comp = a * b;
+            alert("Произведение чисел равно: " + comp);
+        } else if (a < 0 && b >= 0 || a >= 0 && b < 0) {
+            let sum = a + b;
+            alert("Сумма чисел равна: " + sum);
+        }
+
+    </script>
+</body>
+</html>
